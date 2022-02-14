@@ -53,3 +53,15 @@ Sprowadzenie każdego słowa do jego korzenia. (użył, użyliśmy, użyła) => 
 - model NLP bag-of-words
 - tradycyjne klasyfikatory NLP
 - wykorzystanie uczenia głębokiego do NLP
+
+# Natural Language Toolkit
+
+Najpowrzechniejszy pakiet używany do pracy z NLP w Pythonie.
+
+
+# Użycie rekurencyjnych sieci neuronowych do przetwarzania języka naturalnego
+
+Używa się ich w kontekście NLP do:
+
+- przewidywania kolejnego słowa podczas pisania
+- generowanie nowego tekstu w oparciu o styl używany już w istniejącej treści
