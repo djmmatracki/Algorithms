@@ -29,18 +29,22 @@ Jej resulatat jest binarny. Jej wynikiem będzie 1 jeśli jakiekolwiek dane wej�
 
 To ulepszenie funkcji progowej. Mamy w niej kontrolę nad czułością funkcji aktywacji.
 
+```python
     def sigmoidFunction(z):
         return 1 / (1+np.exp(-z))
+```
 
 #### Relu
 
 Kiedy x <= 0 to wynikiem jest 0, inaczej jest równa x. Najbardziej popularna w uczeniu sieci neuronowych.
 
+```python
     def ReLu(x):
         if x<0:
             return 0
         else:
             return x
+```
 
 #### Leaky Relu
 
@@ -50,19 +54,23 @@ Bardziej oddaje od zwykłego ReLu. Jest kilka sposobów wyznaczenia beta:
 - Możemy zrobić z niej parametr sieci neuronowej i pozwolić sieci ustalić jej wartość.
 - Możemy jej przypisać wartość losową.
 
+```python
     def leakyReLu(x, beta=0.01):
         if x<0:
             return (beta*x)
         else:
             return x
+```
 
 #### Tanges hiperboliczny
 
 Jest podobny do funckji sigmoidalnejm, ale pozwala na obsługę negatywnego sygnału
 
+```python
     def tanh(x):
         numerator = 1-np.exp(-2*x)
         denominator = 1+np.exp(-2*x)
+```
 
 
 #### Znormalizowana funkcja wykładnicza (funkcja softmax)
